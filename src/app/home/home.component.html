@@ -2,8 +2,8 @@
     <div *ngFor="let mesa of mesas">
       <button (click)="toggleDisplay(mesa)">{{ mesa.nombreVisible }}</button>
       <div *ngIf="mesa.display">
-        <button (click)="descargarCSV(mesa)">Descargar CSV</button>
-        <button (click)="descargarSQL(mesa)">Descargar SQL</button>
+        <button (click)="descargarCSV(mesa)">Descargar archivo .CSV</button>
+        <button (click)="descargarSQL(mesa)">Descargar archivo .SQL</button>
       </div>
     </div>
   </div>

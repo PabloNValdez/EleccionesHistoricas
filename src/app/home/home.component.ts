@@ -9,23 +9,23 @@ import { saveAs } from 'file-saver';
 export class HomeComponent implements OnInit {
 
   mesas = [
-    { nombre: 'da29_21', nombreVisible: 'Mesa1', display: false, tipos: [
+    { nombre: 'dn14_21', nombreVisible: 'Escrutinio Definitivo 14 de Noviembre 2021', display: false, tipos: [
+      { tipo: 'csv'},
+      { tipo: 'sql'},
+    ]},
+    { nombre: 'da29_21', nombreVisible: 'Escrutinio Definitivo 29 de Agosto 2021', display: false, tipos: [
     { tipo: 'csv'},
     { tipo: 'sql'},
     ]},
-    { nombre: 'dj2_19', nombreVisible: 'Mesa2', display: false, tipos: [
+    { nombre: 'dj27_19', nombreVisible: 'Escrutinio Definitivo 27 de Junio 2019',display: false, tipos: [
+      { tipo: 'csv'},
+      { tipo: 'sql'},
+      ]},
+    { nombre: 'dj2_19', nombreVisible: 'Escrutinio Definitivo 2 de Junio 2019', display: false, tipos: [
     { tipo: 'csv'},
     { tipo: 'sql'},
     ]},
-    { nombre: 'dj27_19', nombreVisible: 'Mesa3',display: false, tipos: [
-    { tipo: 'csv'},
-    { tipo: 'sql'},
-    ]},
-    { nombre: 'dn14_21', nombreVisible: 'Mesa4', display: false, tipos: [
-    { tipo: 'csv'},
-    { tipo: 'sql'},
-    ]},
-    { nombre: 'do22_17', nombreVisible: 'Mesa5', display: false, tipos: [
+    { nombre: 'do22_17', nombreVisible: 'Escrutinio Definitivo 22 de Octubre 2017', display: false, tipos: [
     { tipo: 'csv'},
     { tipo: 'sql'},
     ]},
