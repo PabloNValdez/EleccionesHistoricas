@@ -1,9 +1,11 @@
 <div class="container">
-    <div *ngFor="let mesa of mesas">
-      <button (click)="toggleDisplay(mesa)">{{ mesa.nombreVisible }}</button>
-      <div *ngIf="mesa.display">
-        <button (click)="descargarCSV(mesa)">Descargar archivo .CSV</button>
-        <button (click)="descargarSQL(mesa)">Descargar archivo .SQL</button>
+    <div *ngFor="let mesa of mesas; let i = index">
+      <button (click)="toggleDisplay(mesa, i)" class="buttonList">{{ mesa.nombreVisible }}</button>
+      <div *ngIf="mesa.display && currentMesa === i">
+        <button (click)="descargarCSV(mesa)" class="buttonSubList">
+          <img src="../../assets/img/extension-de-formato-de-archivo-csv.png" alt="CSV">Descargar archivo .CSV</button>
+        <button (click)="descargarSQL(mesa)" class="buttonSubList">
+          <img src="../../assets/img/extension-de-formato-de-archivo-sql.png" alt="SQL">Descargar archivo .SQL</button>
       </div>
     </div>
-  </div>
+</div>

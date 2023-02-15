@@ -2,17 +2,52 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
+    margin-top: 230px;
+  }
+
+  button {
+    cursor: pointer;
+    /*box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);*/
+    box-shadow: 3px 3px 3px #707070;
+    border-color: #e0f2f1;
+    border-radius: 10px;
   }
   
-  .container button {
+  .buttonList {
     height: 50px;
-    width: 450px;
+    width: 520px;
     font-size: 20px;
     margin: 10px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    background-color: #e0f2f1;
+    color: #37474f;
+  }
+
+  .buttonSubList{
+    height: 50px;
+    width: 320px;
+    font-size: 20px;
+    margin: 10px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    background-color: #e0f2f1;
+    color: #37474f;
+  }
+
+  .buttonSubList img {
+    height: 25px;
+    width: 25px;
+    margin-right: 10px;
   }
   
   .container div {
     display: flex;
     flex-direction: column;
     align-items: center;
+  }
+
+  .container button:hover {
+    background-color: #80cbc4;
   }

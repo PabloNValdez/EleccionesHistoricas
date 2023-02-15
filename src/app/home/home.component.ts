@@ -33,12 +33,19 @@ export class HomeComponent implements OnInit {
 
   filePath: string = "../../assets/Mesas/"; //En dónde se almacenan los archivos
 
+  currentMesa: number = -1;
+
   constructor() { }
 
   ngOnInit(): void {
   }
 
-  toggleDisplay(mesa: any){
+  toggleDisplay(mesa: any, index: any) {
+    if (this.currentMesa === index) {
+      this.currentMesa = -1;
+    } else {
+      this.currentMesa = index;
+    }
     mesa.display = !mesa.display;
   }
 
